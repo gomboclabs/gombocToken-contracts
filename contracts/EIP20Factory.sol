@@ -11,7 +11,7 @@ contract EIP20Factory {
 
     function EIP20Factory() public {
         //upon creation of the factory, deploy a EIP20 (parameters are meaningless) and store the bytecode provably.
-        address verifiedToken = createEIP20(100000000000000000000000000, "Gomboc", 2, "GMC");
+        address verifiedToken = createEIP20(100000000000000000000000000, "Gomboc", 18, "GMC");
         EIP20ByteCode = codeAt(verifiedToken);
     }
 
