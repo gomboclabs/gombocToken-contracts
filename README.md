@@ -42,7 +42,7 @@ metadata.json :
 ipfs://QmVmgDMfwJ3ye2GcB3o9o5QBV1J5omk56JJmKV9mWdNKMX
 
 
-## Bomboc NFT - GBO
+## Gomboc NFT - GBO
 
 ### Rinkeby network
 
