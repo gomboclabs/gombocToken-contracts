@@ -1,5 +1,6 @@
 # gomboc-coin-contracts
-BAL is balance coin
+
+## Gomboc Token - BAL
 
 ### Rinkeby network
 
@@ -39,3 +40,47 @@ contract-7f2c2e8d04.sol :
 ipfs://Qmf1iqjxZFTfjPCE341U3Djvjqn89w7AH4aEbzpZHTs9wp
 metadata.json : 
 ipfs://QmVmgDMfwJ3ye2GcB3o9o5QBV1J5omk56JJmKV9mWdNKMX
+
+
+## Bomboc NFT - GBO
+
+### Rinkeby network
+
+Token Address: 0xcb12ee888b4fd3e7ff29612087f093bd9ee4f606
+
+### Contracts
+
+@openzeppelin/contracts@4.3.2/access/Ownable.sol : 
+ipfs://Qmd5c7Vxtis9wzkDNhxwc6A2QT5H9xn9kfjhx7qx44vpro
+@openzeppelin/contracts@4.3.2/token/ERC721/ERC721.sol : 
+ipfs://QmdnVKmDDWDvdRr6vtrxy3G6WafqA2TAhUZv1UFMsm4B4r
+@openzeppelin/contracts@4.3.2/token/ERC721/IERC721.sol : 
+ipfs://QmPG2oeDjKncqsEeyYGjAN7CwAJmMgHterXGGnpzhha4z7
+@openzeppelin/contracts@4.3.2/token/ERC721/IERC721Receiver.sol : 
+ipfs://Qmd8hXE3GZfBHuWx3RNiYgFW2ci7KvHtib8DiwzJ2dgo9V
+@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721Burnable.sol : 
+ipfs://Qman8u5hNWrE34xNinnSgNqMXcsyPsHh5992b4G7iM2xFX
+@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721Enumerable.sol : 
+ipfs://QmTptvu7MJ6QcogPJUxkDEkdKm97KGTC28bhsZKu4sex4M
+@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721URIStorage.sol : 
+ipfs://QmPwk5uVSHPQkepebrZSQ9xqgXdPABKqHwJZ2HkzNByLRE
+@openzeppelin/contracts@4.3.2/token/ERC721/extensions/IERC721Enumerable.sol : 
+ipfs://QmRZsS3EYuLp75nBym1QQ4y6aQXGew75wSbv1uwqkvouUK
+@openzeppelin/contracts@4.3.2/token/ERC721/extensions/IERC721Metadata.sol : 
+ipfs://QmUShaQEu8HS1GjDnsMJQ8jkZEBrecn6NuDZ3pfjY1gVck
+@openzeppelin/contracts@4.3.2/utils/Address.sol : 
+ipfs://QmVApz5fCUq2QC8gKTsNNdCmcedJ3ETHp68zR5N3WUKS4r
+@openzeppelin/contracts@4.3.2/utils/Context.sol : 
+ipfs://QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux
+@openzeppelin/contracts@4.3.2/utils/Counters.sol : 
+ipfs://QmSyDz67R2HCypDE8Pacn3voVwxw9x17NM66q47YgBnGqc
+@openzeppelin/contracts@4.3.2/utils/Strings.sol : 
+ipfs://QmQwCB2BHnEuYR22PYt9HkpbgeFDhq4rHmaYqAZbX3WRC7
+@openzeppelin/contracts@4.3.2/utils/introspection/ERC165.sol : 
+ipfs://Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn
+@openzeppelin/contracts@4.3.2/utils/introspection/IERC165.sol : 
+ipfs://QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx
+contract-ca40f197e8.sol : 
+ipfs://QmS4ZCDJKDtMPj1WjBfJ9sphLG96ufDnxZnPWR9SahTtDv
+metadata.json : 
+ipfs://QmYJmE5ctdjfxHfsv4ErcVGWGJNixVfg19eDxSFaYQX2TL
