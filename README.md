@@ -4,7 +4,7 @@
 
 ### Rinkeby network
 
-Token Address: 0x3da52e06a6c7deff72c9016aa59a8a9dd702c73c
+Token Address: 0x3dA52e06A6c7dEff72c9016Aa59a8a9DD702C73C
 
 ### Contracts
 
@@ -46,7 +46,7 @@ ipfs://QmVmgDMfwJ3ye2GcB3o9o5QBV1J5omk56JJmKV9mWdNKMX
 
 ### Rinkeby network
 
-Token Address: 0xcb12ee888b4fd3e7ff29612087f093bd9ee4f606
+Token Address: 0xcB12ee888B4Fd3e7ff29612087F093bD9Ee4f606
 
 ### Contracts
 
