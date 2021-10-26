@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 
 contract GombocToken is ERC20, ERC20Burnable, Ownable, ERC20Permit, ERC20Votes {
-    constructor() ERC20("GombocToken", "GOOT") ERC20Permit("GOOT") {
+    constructor() ERC20("GombocToken", "GooT") ERC20Permit("GooT") {
         _mint(msg.sender, 100000000 * 10 ** decimals());
     }
 

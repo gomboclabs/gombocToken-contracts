@@ -13,7 +13,7 @@ contract GambocNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable
 
     Counters.Counter private _tokenIdCounter;
 
-    constructor() ERC721("GombocNFT", "GOONFT") {}
+    constructor() ERC721("GombocNFT", "GooNFT") {}
 
     function safeMint(address to) public onlyOwner {
         _safeMint(to, _tokenIdCounter.current());

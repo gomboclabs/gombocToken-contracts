@@ -1,19 +1,49 @@
 import { expect } from "chai";
 import { ethers } from "hardhat";
 
-describe("Greeter", function () {
-  it("Should return the new greeting once it's changed", async function () {
-    const Greeter = await ethers.getContractFactory("Greeter");
-    const greeter = await Greeter.deploy("Hello, world!");
-    await greeter.deployed();
+describe("GombocToken", function () {
+  it("Should be deployed on new address", async function () {
+    const GombocToken = await ethers.getContractFactory("GombocToken");
+    const Goot = await GombocToken.deploy();
+    await Goot.deployed();
 
-    expect(await greeter.greet()).to.equal("Hello, world!");
+  });
 
-    const setGreetingTx = await greeter.setGreeting("Hola, mundo!");
+  it("Should be minted new GombocToken", async function () {
+    const GombocToken = await ethers.getContractFactory("GombocToken");
+    const Goot = await GombocToken.deploy();
+    await Goot.deployed();
 
-    // wait until the transaction is mined
-    await setGreetingTx.wait();
+  });
 
-    expect(await greeter.greet()).to.equal("Hola, mundo!");
+  it("Should be burned GombocToken", async function () {
+    const GombocToken = await ethers.getContractFactory("GombocToken");
+    const Goot = await GombocToken.deploy();
+    await Goot.deployed();
+
   });
 });
+
+describe("GombocNFT", function () {
+  it("Should be deployed on new address", async function () {
+    const GombocNFT = await ethers.getContractFactory("GombocNFT");
+    const GooNFT = await GombocNFT.deploy();
+    await GooNFT.deployed();
+
+  });
+
+  it("Should be minted new GombocNFT", async function () {
+    const GombocNFT = await ethers.getContractFactory("GombocNFT");
+    const GooNFT = await GombocNFT.deploy();
+    await GooNFT.deployed();
+
+  });
+
+  it("Should be burned GombocNFT", async function () {
+    const GombocNFT = await ethers.getContractFactory("GombocNFT");
+    const GooNFT = await GombocNFT.deploy();
+    await GooNFT.deployed();
+
+  });
+});
+
