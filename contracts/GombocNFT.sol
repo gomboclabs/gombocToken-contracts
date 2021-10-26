@@ -8,7 +8,7 @@ import "@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721Burnable.sol
 import "@openzeppelin/contracts@4.3.2/access/Ownable.sol";
 import "@openzeppelin/contracts@4.3.2/utils/Counters.sol";
 
-contract Gamboc is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable {
+contract GambocNFT is ERC721, ERC721Enumerable, ERC721URIStorage, ERC721Burnable, Ownable {
     using Counters for Counters.Counter;
 
     Counters.Counter private _tokenIdCounter;

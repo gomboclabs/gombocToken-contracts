@@ -7,7 +7,7 @@ import "@openzeppelin/contracts@4.3.2/access/Ownable.sol";
 import "@openzeppelin/contracts@4.3.2/token/ERC20/extensions/draft-ERC20Permit.sol";
 import "@openzeppelin/contracts@4.3.2/token/ERC20/extensions/ERC20Votes.sol";
 
-contract Balance is ERC20, ERC20Burnable, Ownable, ERC20Permit, ERC20Votes {
+contract GombocToken is ERC20, ERC20Burnable, Ownable, ERC20Permit, ERC20Votes {
     constructor() ERC20("Balance", "BAL") ERC20Permit("Balance") {
         _mint(msg.sender, 100000000 * 10 ** decimals());
     }
