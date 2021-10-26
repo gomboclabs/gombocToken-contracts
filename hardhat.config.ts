@@ -29,7 +29,7 @@ const config: HardhatUserConfig = {
   networks: {
     hardhat: {
       forking: {
-        url: process.env.MAIN_URL || ""
+        url: "https://eth-mainnet.alchemyapi.io/v2/_7yx26hunKLmMbB9LoJ5ps0SLkkuj7iP"
       },
     },
     rinkeby: {
