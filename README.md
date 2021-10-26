@@ -1,86 +1,46 @@
-# gomboc-coin-contracts
+# Advanced Sample Hardhat Project
 
-## Gomboc Token - BAL
+This project demonstrates an advanced Hardhat use case, integrating other tools commonly used alongside Hardhat in the ecosystem.
 
-### Rinkeby network
+The project comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts. It also comes with a variety of other tools, preconfigured to work with the project code.
 
-Token Address: 0x3dA52e06A6c7dEff72c9016Aa59a8a9DD702C73C
+Try running some of the following tasks:
 
-### Contracts
+```shell
+npx hardhat accounts
+npx hardhat compile
+npx hardhat clean
+npx hardhat test
+npx hardhat node
+npx hardhat help
+REPORT_GAS=true npx hardhat test
+npx hardhat coverage
+npx hardhat run scripts/deploy.ts
+TS_NODE_FILES=true npx ts-node scripts/deploy.ts
+npx eslint '**/*.{js,ts}'
+npx eslint '**/*.{js,ts}' --fix
+npx prettier '**/*.{json,sol,md}' --check
+npx prettier '**/*.{json,sol,md}' --write
+npx solhint 'contracts/**/*.sol'
+npx solhint 'contracts/**/*.sol' --fix
+```
 
-@openzeppelin/contracts@4.3.2/access/Ownable.sol : 
-ipfs://Qmd5c7Vxtis9wzkDNhxwc6A2QT5H9xn9kfjhx7qx44vpro
-@openzeppelin/contracts@4.3.2/token/ERC20/ERC20.sol : 
-ipfs://QmcqjUoFLLMyx7dbwSHUnDBH6aphkVHXWQvQRRev5EAWEh
-@openzeppelin/contracts@4.3.2/token/ERC20/IERC20.sol : 
-ipfs://Qmbn5Mj7aUn8hJuQ8VrQjjEXRsXyJKykgnjR9p4C3nfLtL
-@openzeppelin/contracts@4.3.2/token/ERC20/extensions/ERC20Burnable.sol : 
-ipfs://QmSdJehhx1SwCWLSFFgHQTmUY2YwDTBQjTVjkmhXhA1srb
-@openzeppelin/contracts@4.3.2/token/ERC20/extensions/ERC20Votes.sol : 
-ipfs://QmQhihi8JUZV84DxK36Sj9THjUhUXpSX1c7PZXsAYUsrSc
-@openzeppelin/contracts@4.3.2/token/ERC20/extensions/IERC20Metadata.sol : 
-ipfs://QmSim72e3ZVsfgZt8UceCvbiSuMRHR6WDsiamqNzZahGSY
-@openzeppelin/contracts@4.3.2/token/ERC20/extensions/draft-ERC20Permit.sol : 
-ipfs://QmX4X9avozvtVH8F8ixE8mCvYA2bci1rdiLAcDtTTtaYoL
-@openzeppelin/contracts@4.3.2/token/ERC20/extensions/draft-IERC20Permit.sol : 
-ipfs://QmZocr8f8MKrLWkmuhBfrb9Ls5eeQ5CoUpA64uGAxAZoLL
-@openzeppelin/contracts@4.3.2/utils/Context.sol : 
-ipfs://QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux
-@openzeppelin/contracts@4.3.2/utils/Counters.sol : 
-ipfs://QmSyDz67R2HCypDE8Pacn3voVwxw9x17NM66q47YgBnGqc
-@openzeppelin/contracts@4.3.2/utils/cryptography/ECDSA.sol : 
-ipfs://QmT8bVda92mptimLgonyq28qENq4sRgy6K3v118CvZcKdP
-@openzeppelin/contracts@4.3.2/utils/cryptography/draft-EIP712.sol : 
-ipfs://QmdoZ6ZAj9YzCjKnNo2PmF7Xs8AP3NtiRJZNRzfZEjoy55
-@openzeppelin/contracts@4.3.2/utils/math/Math.sol : 
-ipfs://QmdR7JUXpD5X7eXkc24bRtNj3e7ahs8RC8s25cu7X14GHU
-@openzeppelin/contracts@4.3.2/utils/math/SafeCast.sol : 
-ipfs://QmdZs431M8sA4mTsSe8PeycREkBAmzC4a6NN7eFppyK62B
-contract-7f2c2e8d04.sol : 
-ipfs://Qmf1iqjxZFTfjPCE341U3Djvjqn89w7AH4aEbzpZHTs9wp
-metadata.json : 
-ipfs://QmVmgDMfwJ3ye2GcB3o9o5QBV1J5omk56JJmKV9mWdNKMX
+# Etherscan verification
 
+To try out Etherscan verification, you first need to deploy a contract to an Ethereum network that's supported by Etherscan, such as Ropsten.
 
-## Gomboc NFT - GBO
+In this project, copy the .env.example file to a file named .env, and then edit it to fill in the details. Enter your Etherscan API key, your Ropsten node URL (eg from Alchemy), and the private key of the account which will send the deployment transaction. With a valid .env file in place, first deploy your contract:
 
-### Rinkeby network
+```shell
+hardhat run --network ropsten scripts/sample-script.ts
+```
 
-Token Address: 0xcB12ee888B4Fd3e7ff29612087F093bD9Ee4f606
+Then, copy the deployment address and paste it in to replace `DEPLOYED_CONTRACT_ADDRESS` in this command:
 
-### Contracts
+```shell
+npx hardhat verify --network ropsten DEPLOYED_CONTRACT_ADDRESS "Hello, Hardhat!"
+```
 
-@openzeppelin/contracts@4.3.2/access/Ownable.sol : 
-ipfs://Qmd5c7Vxtis9wzkDNhxwc6A2QT5H9xn9kfjhx7qx44vpro
-@openzeppelin/contracts@4.3.2/token/ERC721/ERC721.sol : 
-ipfs://QmdnVKmDDWDvdRr6vtrxy3G6WafqA2TAhUZv1UFMsm4B4r
-@openzeppelin/contracts@4.3.2/token/ERC721/IERC721.sol : 
-ipfs://QmPG2oeDjKncqsEeyYGjAN7CwAJmMgHterXGGnpzhha4z7
-@openzeppelin/contracts@4.3.2/token/ERC721/IERC721Receiver.sol : 
-ipfs://Qmd8hXE3GZfBHuWx3RNiYgFW2ci7KvHtib8DiwzJ2dgo9V
-@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721Burnable.sol : 
-ipfs://Qman8u5hNWrE34xNinnSgNqMXcsyPsHh5992b4G7iM2xFX
-@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721Enumerable.sol : 
-ipfs://QmTptvu7MJ6QcogPJUxkDEkdKm97KGTC28bhsZKu4sex4M
-@openzeppelin/contracts@4.3.2/token/ERC721/extensions/ERC721URIStorage.sol : 
-ipfs://QmPwk5uVSHPQkepebrZSQ9xqgXdPABKqHwJZ2HkzNByLRE
-@openzeppelin/contracts@4.3.2/token/ERC721/extensions/IERC721Enumerable.sol : 
-ipfs://QmRZsS3EYuLp75nBym1QQ4y6aQXGew75wSbv1uwqkvouUK
-@openzeppelin/contracts@4.3.2/token/ERC721/extensions/IERC721Metadata.sol : 
-ipfs://QmUShaQEu8HS1GjDnsMJQ8jkZEBrecn6NuDZ3pfjY1gVck
-@openzeppelin/contracts@4.3.2/utils/Address.sol : 
-ipfs://QmVApz5fCUq2QC8gKTsNNdCmcedJ3ETHp68zR5N3WUKS4r
-@openzeppelin/contracts@4.3.2/utils/Context.sol : 
-ipfs://QmWcsmkVr24xmmjfnBQZoemFniXjj3vwT78Cz6uqZW1Hux
-@openzeppelin/contracts@4.3.2/utils/Counters.sol : 
-ipfs://QmSyDz67R2HCypDE8Pacn3voVwxw9x17NM66q47YgBnGqc
-@openzeppelin/contracts@4.3.2/utils/Strings.sol : 
-ipfs://QmQwCB2BHnEuYR22PYt9HkpbgeFDhq4rHmaYqAZbX3WRC7
-@openzeppelin/contracts@4.3.2/utils/introspection/ERC165.sol : 
-ipfs://Qmejonoaj5MLekPus229rJQHcC6E9dz2xorjHJR84fMfmn
-@openzeppelin/contracts@4.3.2/utils/introspection/IERC165.sol : 
-ipfs://QmcsVgLgzWdor3UnAztUkXKNGcysm1MPneWksF72AvnwBx
-contract-ca40f197e8.sol : 
-ipfs://QmS4ZCDJKDtMPj1WjBfJ9sphLG96ufDnxZnPWR9SahTtDv
-metadata.json : 
-ipfs://QmYJmE5ctdjfxHfsv4ErcVGWGJNixVfg19eDxSFaYQX2TL
+# Performance optimizations
+
+For faster runs of your tests and scripts, consider skipping ts-node's type checking by setting the environment variable `TS_NODE_TRANSPILE_ONLY` to `1` in hardhat's environment. For more details see [the documentation](https://hardhat.org/guides/typescript.html#performance-optimizations).
